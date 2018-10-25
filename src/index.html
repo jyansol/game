@@ -7,20 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>숫자야구</title>
     <link rel="stylesheet" href="./index.scss">
+    <link rel="stylesheet" href="./reset.css">
   </head>
 
   <body>
-    <h1>민엽이의 숫자야구!</h1>
+    <h1>!민엽이의 숫자야구!</h1>
     <div class="container">
-      <section class="score">
+      <section class="score-section">
         <div class="score-bg">
-          <div>
-
+          <div class="score">
+            <ul>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li><span>S</span><em>0</em><em>0</em><em>0</em></li>
+              <li><span>B</span><em>0</em><em>0</em><em>0</em></li>
+            </ul>
+          </div>
+          <div class="out">
+            <ul>
+              <li>0</li>
+              <li>0</li>
+              <li>0</li>
+              <li><span>OUT</span></li>
+            </ul>
           </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
+      <section class="select-section">
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">0</a></li>
+        </ul>
+        <button>던지기</button>
+        <button>다시선택</button>
+      </section>
+      <section class="board-section">
+        <ul>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+        </ul>
+      </section>
     </div>
     <script src="./index.js"></script>
   </body>

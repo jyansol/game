@@ -3,3 +3,23 @@ $main-color: skyblue;
 body {
   background-color: $main-color;
 }
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  border: 1px solid black;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-section {
+  order: 1;
+}
+
+.score-bg {
+  background-color: pink;
+}
