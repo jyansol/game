@@ -26,10 +26,18 @@ document.querySelector('.select-section').addEventListener('click', (e) => {
   document.querySelector('.list2').textContent = arr[1];
   document.querySelector('.list3').textContent = arr[2];
   // if (arr.length > 3) {
+  //   return false;
   // }
 });
 
 document.querySelector('.pitch').addEventListener('click', (e) => {
+  document.querySelector('.scoreLi1').textContent = arr[0];
+  document.querySelector('.scoreLi2').textContent = arr[1];
+  document.querySelector('.scoreLi3').textContent = arr[2];
+
+  document.querySelector('.outLi1').textContent = arr[0];
+  document.querySelector('.outLi2').textContent = arr[1];
+  document.querySelector('.outLi3').textContent = arr[2];
   let count = 0;
   let strike = 0;
   let ball = 0;
