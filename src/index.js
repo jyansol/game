@@ -1,4 +1,3 @@
-
 // let answer;
 // let score = 0;
 const victoryEl = document.querySelector('.victory');
@@ -79,67 +78,4 @@ document.querySelector('.pitch').addEventListener('click', (e) => {
   // }
 });
 
-// let input = e.target.innerHTML
-// let inputArr = input.split('')
-//   let boarSectionEl = document.querySelectorAll(".board-section li")
-//   let boarSectionArr = Array.prototype.slice.call(boarSectionEl)
-// for ( let j = 0; j < 3; j++){
-//   console.log(inputArr)
-// }
-
-//   let boarSectionEl = document.querySelectorAll(".board-section li")
-//   let boarSectionArr = Array.prototype.slice.call(boarSectionEl)
-
-//   for (let i = 0; i < 3; i++){
-//      let select = e.target.innerHTML;
-//     boarSectionEl[i] = boarSectionArr.splice (select, 1)[0]
-
-//   }
-
-// function randomColor() {
-//   const r = Math.floor(Math.random() * 256);
-//   const g = Math.floor(Math.random() * 256);
-//   const b = Math.floor(Math.random() * 256);
-
-//   return `rgb(${r},${g},${b})`;
-// }
-
-// document.querySelectorAll(".option").forEach((optionEl, index) => {
-//   optionEl.addEventListener("click", e => {
-//     if (answer === index) {
-//       // alert("맞음");
-//       score++;
-//       rightModalEl.classList.add("open");
-//     } else {
-//       // alert("틀림");
-//       // 스코어 0 이 되기전에 점수가 표시 되어야 함으로 0점 이전에 하기 코드가 와야함
-//       document.querySelector(".score-in-modal").textContent = score;
-//       score = 0;
-//       worngModalEl.classList.add("open");
-//     }
-//     document.querySelector(".score").textContent = score;
-//   });
-// });
-
-// function newStage() {
-//   const options = [randomColor(), randomColor(), randomColor()];
-//   document.querySelectorAll(".option").forEach((optionEl, index) => {
-//     optionEl.style.backgroundColor = options[index];
-//   });
-
-//   answer = Math.floor(Math.random() * 3);
-
-//   document.querySelector(".color-text").textContent = options[answer];
-// }
-// newStage();
-// //정답시 화면
-// document.querySelector(".next-stage").addEventListener("click", e => {
-//   newStage();
-//   rightModalEl.classList.remove("open");
-// });
-// //오답시 화면
-// document.querySelector(".play-agin").addEventListener("click", e => {
-//   newStage();
-//   worngModalEl.classList.remove("open");
-// });
 
