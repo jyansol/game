@@ -33,15 +33,15 @@ document.querySelector('.select-section').addEventListener('click', (e) => {
 });
 
 document.querySelector('.reset').addEventListener('click', (e) => {
-  document.querySelector('.list1').textContent = 0;
-  document.querySelector('.list2').textContent = 0;
-  document.querySelector('.list3').textContent = 0;
-  document.querySelector('.scoreLi1').textContent = 0;
-  document.querySelector('.scoreLi2').textContent = 0;
-  document.querySelector('.scoreLi3').textContent = 0;
-  document.querySelector('.outLi1').textContent = 0;
-  document.querySelector('.outLi2').textContent = 0;
-  document.querySelector('.outLi3').textContent = 0;
+  document.querySelectorAll('.outLi').forEach((outli) => {
+    outli.textContent = 0;
+  });
+  document.querySelectorAll('.scoreLi').forEach((scoreli) => {
+    scoreli.textContent = 0;
+  });
+  document.querySelectorAll('.viewLi').forEach((viewli) => {
+    viewli.textContent = 0;
+  });
 });
 
 document.querySelector('.pitch').addEventListener('click', (e) => {
@@ -52,6 +52,7 @@ document.querySelector('.pitch').addEventListener('click', (e) => {
   document.querySelector('.outLi1').textContent = arr[0];
   document.querySelector('.outLi2').textContent = arr[1];
   document.querySelector('.outLi3').textContent = arr[2];
+
   let count = 0;
   let strike = 0;
   let ball = 0;

@@ -1,12 +1,21 @@
 $main-color: skyblue;
-
+body {
+  // background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(40, 40, 40);
+}
 h1 {
-  margin-top: 50px;
+  color: #f0f0f0;
+  line-height: 1.5em;
   text-align: center;
   font-size: 5em;
+  width: 800px;
+  margin: 20px auto;
+  font-weight: 800;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .container {
+  border: 10px solid black;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
   width: 1200px;
@@ -23,19 +32,32 @@ h1 {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+//숫자공 섹션
 .select-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
+//숫자공 선택
 .select-section li {
+  box-sizing: border-box;
   width: 100px;
   height: 100px;
   text-align: center;
+  line-height: 100px;
+  border: 1px solid #f0f0f0;
   color: white;
   font-size: 2em;
   font-weight: 800;
+}
+
+.select-section li {
+  display: block;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
 
 .score-bg {
@@ -52,11 +74,11 @@ h1 {
   font-weight: 800;
 }
 
-.board-ul {
+.board-section ul {
   display: flex;
 }
 
-.board-ul li {
+.board-section ul li {
   font-size: 5em;
   margin: 240px 10px 0 0;
 }
