@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>^^</title>
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./index.scss">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
   </head>
 
 
@@ -16,28 +16,34 @@
     <h1>NUMBER BASEBALL</h1>
     <div class="container">
       <section class="score-section">
-        <div class="score-bg">
+        <div class="score-bg" last-id="0">
           <div class="score">
-            <ul>
-              <li class="scoreLi1">0</li>
-              <li class="scoreLi2">0</li>
-              <li class="scoreLi3">0</li>
+            <ul class="scoreModal modal1">
+              <li class="scoreLi">0</li>
+              <li class="scoreLi">0</li>
+              <li class="scoreLi">0</li>
               <li><span>S</span><em class="strike">0</em></li>
               <li><span>B</span><em class="ball">0</em></li>
             </ul>
           </div>
           <div class="out">
-            <ul>
-              <li class="outLi">0</li>
-              <li class="outLi">0</li>
-              <li class="outLi">0</li>
+            <ul class="outModal">
+              <li class="outLi outLi1">0</li>
+              <li class="outLi outLi2">0</li>
+              <li class="outLi outLi3">0</li>
               <li><span>OUT</span></li>
             </ul>
           </div>
         </div>
       </section>
       <section id="select-section">
-
+        <h2>SELECT BALL</h2>
+        <ul class="ballOption">
+          <li><a href="#">패스트볼</a></li>
+          <li><a href="#">커 브</a></li>
+          <li><a href="#">슬라이더</a></li>
+          <li><a href="#">포크볼</a></li>
+        </ul>
         <ul class="select-section">
           <li class="option"><a href="#">1</a></li>
           <li class="option"><a href="#">2</a></li>
@@ -51,17 +57,18 @@
           <li class="option"><a href="#">0</a></li>
         </ul>
         <button class="pitch">던지기</button>
-        <button class="reset">다시선택</button>
+        <button class="reset">다시하기</button>
       </section>
-      <section class="board-Ssection">
+      <section class="board-section">
         <ul>
-          <li class="viewLi">0</li>
-          <li class="viewLi">0</li>
-          <li class="viewLi">0</li>
+          <li class="viewLi list1">0</li>
+          <li class="viewLi list2">0</li>
+          <li class="viewLi list3">0</li>
         </ul>
       </section>
     </div>
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.scss">
   </body>
 
 

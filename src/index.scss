@@ -1,33 +1,47 @@
 $main-color: skyblue;
+
+* {
+  box-sizing: border-box;
+}
 body {
   // background-color: rgba(0, 0, 0, 0.8);
-  background-color: rgb(40, 40, 40);
+  background-color: black;
 }
 h1 {
-  color: #f0f0f0;
+  color: #303030;
   line-height: 1.5em;
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
   width: 800px;
   margin: 20px auto;
-  font-weight: 800;
-  border-bottom: 1px solid #f0f0f0;
+  font-family: 'Faster One', cursive;
+}
+
+h2 {
+  color: black;
+  font-size: 1em;
+  line-height: 1.8em;
+  text-align: center;
+  font-weight: 700;
+  width: 140px;
+  height: 25px;
 }
 
 .container {
-  border: 10px solid black;
   background-image: url('../images/bg.png');
+  background-size: 850px 500px;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 700px;
+  width: 850px;
+  height: 510px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
 #select-section {
-  width: 200px;
-  height: 700px;
+  border: 1px solid black;
+  width: 140px;
+  height: 500px;
   order: 1;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.5);
@@ -38,40 +52,57 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 12px;
+  width: 140px;
+  padding: 5px;
 }
 
 //숫자공 선택
 .select-section li {
-  box-sizing: border-box;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   text-align: center;
-  line-height: 100px;
-  border: 1px solid #f0f0f0;
-  color: white;
+  line-height: 65px;
+  border: 2px solid #cdcdcd;
+  color: #cdcdcd;
   font-size: 2em;
   font-weight: 800;
+  border-radius: 50px;
 }
 
-.select-section li {
+.select-section li a {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   cursor: pointer;
 }
 
+// view score
 .score-bg {
-  width: 200px;
-  height: 700px;
+  width: 140px;
+  height: 500px;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.score li,
-.out li {
+.score ul,
+.out ul {
+  display: flex;
+}
+
+.score ul li,
+.out ul li {
   color: white;
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.2em;
+  line-height: 2em;
+  width: 140px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.board-section {
+  height: 75px;
+  margin-top: 17.5%;
 }
 
 .board-section ul {
@@ -80,5 +111,52 @@ h1 {
 
 .board-section ul li {
   font-size: 5em;
-  margin: 240px 10px 0 0;
+}
+
+.score {
+  display: none;
+}
+
+.out {
+  display: none;
+}
+
+.score.open {
+  display: block;
+}
+
+.out.open {
+  display: block;
+}
+
+//button
+button {
+  color: #f0f0f0f0;
+  font-size: 0.5em;
+  width: 140px;
+  height: 30px;
+  border-style: none;
+  background-color: black;
+}
+
+.reset {
+  margin-top: 5px;
+}
+
+.ballOption {
+  display: flex;
+  flex-wrap: wrap;
+  width: 140px;
+  margin-top: 5px;
+}
+
+.ballOption li {
+  color: #181818;
+  width: 70px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.ballOption li:hover {
+  color: tomato;
 }
